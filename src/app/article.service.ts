@@ -41,8 +41,24 @@ export class ArticleService {
       editor: "Jo Naulaerts",
     };
 
+    let article3: Article = {
+      id: 3,
+      title: "Title article 2",
+      subtitle: "Subtitle article 2",
+      imageUrl: "https://images.pexels.com/photos/3422964/pexels-photo-3422964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=100&w=134",
+      imageCaption: "caption image 2",
+      content: `2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptas sequi voluptatum pariatur! Quae cumque
+      quidem dolor maxime enim debitis omnis nemo facilis sequi autem? Quae tenetur, repellat vero deleniti vitae
+      dolores? Cum tempore, mollitia provident placeat fugit earum, sint, quae iusto optio ea officiis consectetur sit
+      necessitatibus itaque explicabo?`,
+      author: "Florian Smeyers",
+      publishDate: "23/09/2021",
+      editor: "Jo Naulaerts",
+    };
+
     articles.push(article1);
     articles.push(article2);
+    articles.push(article3);
 
     return articles;
   }

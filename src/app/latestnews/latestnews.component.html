@@ -1,0 +1,12 @@
+<h1>Latest News</h1>
+
+
+<app-article *ngFor="let article of articles and Number(article.publishDate) < (weekago)" [article]="article">
+
+  <!-- <app-article *ngIf="article.publishDate == ''; elseBlock"> </app-article> -->
+<!-- <div *ngIf="article.publishDate.getTime() < weekago.getTime() "></div> -->
+
+<!-- <p #elseBlock>No articles found</p> -->
+
+
+</app-article>
