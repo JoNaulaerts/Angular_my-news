@@ -22,7 +22,8 @@ export class ArticleService {
       dolores? Cum tempore, mollitia provident placeat fugit earum, sint, quae iusto optio ea officiis consectetur sit
       necessitatibus itaque explicabo?`,
       author: "Michaël Cloots",
-      publishDate: "28/11/2020"
+      publishDate: "28/11/2020",
+      editor: "Jo Naulaerts",
     };
 
     let article2: Article = {
@@ -36,7 +37,8 @@ export class ArticleService {
       dolores? Cum tempore, mollitia provident placeat fugit earum, sint, quae iusto optio ea officiis consectetur sit
       necessitatibus itaque explicabo?`,
       author: "Florian Smeyers",
-      publishDate: "30/11/2020"
+      publishDate: "30/11/2020",
+      editor: "Jo Naulaerts",
     };
 
     articles.push(article1);
