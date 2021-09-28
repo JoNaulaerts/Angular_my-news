@@ -10,6 +10,7 @@ import { Article } from '../article';
 export class ArticleComponent implements OnInit {
   @Input() article: Article = {id: 0, title: "", subtitle: "", imageUrl: "", imageCaption: "", content: "", author: "", publishDate: "", editor: ""};
   @Input() isDetail: boolean = false;
+  @Input() backRoute: string = "''";
 
   constructor(private router: Router) { }
 
@@ -19,5 +20,9 @@ export class ArticleComponent implements OnInit {
 
   detail(id: number) {
     this.router.navigate(['/article', id]);
+  }
+
+  home(backRoute: string) {
+    this.router.navigate(['/' + backRoute]);
   }
 }
