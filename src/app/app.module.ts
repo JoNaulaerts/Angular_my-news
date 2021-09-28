@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { LatestnewsComponent } from './latestnews/latestnews.component';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 import { ShortenContentPipe } from './shorten-content.pipe';
+import { ToUpperCasePipe } from './to-upper-case.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ShortenContentPipe } from './shorten-content.pipe';
     ContactComponent,
     LatestnewsComponent,
     ArticleDetailComponent,
-    ShortenContentPipe
+    ShortenContentPipe,
+    ToUpperCasePipe
   ],
   imports: [
     BrowserModule,

@@ -3,7 +3,7 @@ collapse
 </a>
 
 <article *ngIf="article.editor == 'Jo Naulaerts'">
-  <h1>{{article.title}}</h1>
+  <h1>{{article.title | toUpperCase}}</h1>
   <h4>{{article.subtitle}}</h4>
 
   <figure>
