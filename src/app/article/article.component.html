@@ -1,25 +1,38 @@
+<a *ngIf="isDetail" class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+collapse
+</a>
+
 <article *ngIf="article.editor == 'Jo Naulaerts'">
   <h1>{{article.title}}</h1>
   <h4>{{article.subtitle}}</h4>
+
   <figure>
       <img src="{{article.imageUrl}}"
           alt="{{article.imageCaption}}">
       <figcaption>{{article.imageCaption}}</figcaption>
   </figure>
-  <p *ngIf="!isDetail">
-    {{article.content | shortenContent : 250}}
-</p>
+
+  <div *ngIf="isDetail" class="collapse" id="collapseExample">
 <p *ngIf="isDetail">
     {{article.content}}
-</p>
-
-<p *ngIf="!isDetail">
-  <button (click)="detail(article.id)">Read more</button>
 </p>
 <p *ngIf="isDetail">
   <button (click)="home(backRoute)">Back</button>
 </p>
-  <footer>
+</div>
+
+
+
+  <div *ngIf="!isDetail">
+    <p *ngIf="!isDetail">
+      {{article.content | shortenContent : 250}}
+  </p>
+  <p *ngIf="!isDetail">
+    <button (click)="detail(article.id)">Read more</button>
+  </p>
+    </div>
+
+    <footer>
       <p>Author: {{article.author}}, Published: {{article.publishDate}}</p>
   </footer>
 </article>
