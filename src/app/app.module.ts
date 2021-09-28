@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { ContactComponent } from './contact/contact.component';
 import { LatestnewsComponent } from './latestnews/latestnews.component';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
+import { ShortenContentPipe } from './shorten-content.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { LatestnewsComponent } from './latestnews/latestnews.component';
     HomeComponent,
     MenuComponent,
     ContactComponent,
-    LatestnewsComponent
+    LatestnewsComponent,
+    ArticleDetailComponent,
+    ShortenContentPipe
   ],
   imports: [
     BrowserModule,
